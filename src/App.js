@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import CodeEditor from './CodeEditor/CodeEditor';
 

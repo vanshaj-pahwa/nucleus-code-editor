@@ -14,7 +14,6 @@ const CodeEditor = () => {
   const [input, setInput] = useState("");
   const [time, setTime] = useState("");
   const [selectedLanguage, setSelectedLanguage] = useState(null);
-  const [selectedTheme, setSelectedTheme] = useState("light");
   const [loading, setLoading] = useState(false);
 
   const languageOptions = [
@@ -36,14 +35,6 @@ const CodeEditor = () => {
     },
   ];
   
-  
-  
-  const themeOptions = [
-    { id: "light", name: "Light Theme" },
-    { id: "dark", name: "Dark Theme" },
-    // Add more theme options as needed
-  ];
-
   const executeCode = async () => {
     try {
       setLoading(true);
@@ -97,10 +88,6 @@ const CodeEditor = () => {
     setCode(selectedLanguageObj.defaultCode);
   };
 
-  const handleThemeChange = (value) => {
-    setSelectedTheme(value);
-  };
-
   return (
     <>
       <div className="code-editor-header">
@@ -124,17 +111,6 @@ const CodeEditor = () => {
                       </Option>
                     ))}
                   </Select>
-                  {/* <Select
-                    value={selectedTheme}
-                    onChange={handleThemeChange}
-                    placeholder="Select a theme"
-                  >
-                    {themeOptions.map((theme) => (
-                      <Option key={theme.id} value={theme.id}>
-                        {theme.name}
-                      </Option>
-                    ))}
-                  </Select> */}
                   <Button
                     type="primary"
                     onClick={executeCode}
