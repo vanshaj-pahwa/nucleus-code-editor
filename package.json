@@ -2,6 +2,7 @@
   "name": "code-editor",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://vanshajpahwa07.github.io/nucleus-code-editor/",
   "dependencies": {
     "@ant-design/icons": "^5.1.4",
     "@testing-library/jest-dom": "^5.16.5",
@@ -15,6 +16,7 @@
     "sass": "^1.62.1",
     "web-vitals": "^2.1.4"
   },
+  
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
