@@ -1,8 +1,8 @@
 {
+  "homepage": "https://vanshajpahwa07.github.io/nucleus-code-editor/",
   "name": "code-editor",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://vanshajpahwa07.github.io/nucleus-code-editor/",
   "dependencies": {
     "@ant-design/icons": "^5.1.4",
     "@testing-library/jest-dom": "^5.16.5",
