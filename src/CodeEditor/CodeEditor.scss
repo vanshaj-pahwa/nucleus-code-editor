@@ -1,0 +1,58 @@
+.code-editor-header {
+    padding: 16px;
+    background-color: #354259;
+    color: #fefcf3;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+  }
+  
+  .code-editor {
+    height: 75vh;
+    &.light {
+      background-color: #fdfaf6;
+    }
+  
+    &.dark {
+      background-color: #4f4557;
+      color: #ffffff;
+      .ant-input {
+        background-color: #6d5d6e;
+        color: #f4eee0;
+      }
+    }
+    background-color: #fdfaf6;
+    .code-editor-body {
+      height: 75vh;
+      padding: 16px;
+    }
+  
+    .code-editor-controls {
+      margin-bottom: 10px;
+      display: flex;
+      align-items: flex-start;
+    }
+  
+    .code-editor-content {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  
+  .rightColumn {
+    &.dark {
+      background-color: #393646;
+      .output {
+        background-color: #393646;
+      }
+    }
+    padding: 16px;
+    background-color: #faf1e6;
+    .output {
+      background-color: #faf1e6;
+  
+      .output-info {
+        margin-bottom: 10px;
+      }
+    }
+  }
